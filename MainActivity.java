@@ -1,22 +1,16 @@
-package com.example.restuarateurio;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.mapwithmarker;
 
 import android.os.Bundle;
 
-import static com.example.restuarateurio.R.*;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(layout.activity_main);
-    }
+        setContentView(R.layout.activity_main);
 
-    protected void onStart() {
-        super.onStart();
-        setContentView(layout.activity_main);
 
     }
 }

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF9800"
+    tools:context=".MainActivity"
+    android:id="@+id/main"
+    >
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:translationY="550dp"
+        app:itemTextColor="#FFFFFF"
+        app:menu="@menu/menu"/>
+
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:text="Profile:"
+        android:textColor="#FFFFFF"
+        android:textSize="36dp"
+        android:translationX="-250dp"
+        android:translationY="25dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal" />
+
+
+
+
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:translationX="-400dp"
+        android:translationY="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton7"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Places"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:translationX="-400dp"
+        android:translationY="100dp"></TextView>
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:translationX="-550dp"
+        android:translationY="200dp"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton6"
+        app:srcCompat="@android:drawable/sym_contact_card"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Likes"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:translationX="-550dp"
+        android:translationY="200dp"></TextView>
+
+
+
+</LinearLayout>

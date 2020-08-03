@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item
+     android:id="@+id/home"
+     android:icon="@drawable/common_google_signin_btn_icon_dark"
+     android:title="home"
+     android:visible="true"
+     android:onClick="action_FirstFragment_to_SecondFragment">
+
+ </item>
+    <item
+        android:id="@+id/back"
+        android:icon="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:title="back"
+        android:onClick="action_FirstFragment_to_SecondFragment">
+    </item>
+    <item
+        android:id="@+id/search_button"
+        android:title="search"
+        android:icon="@mipmap/ic_launcher"
+        android:onClick="action_FirstFragment_to_SecondFragment">
+    >
+
+    </item>
+</menu>

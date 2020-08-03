@@ -1,7 +1,46 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/map"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+    android:layout_width="match_parent"
+    android:background="#FFAA54"
+    >
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:translationY="550dp"
+        app:itemTextColor="#FFFFFF"
+        app:menu="@menu/menu"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:text="COVID: "
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:translationX="-350dp"
+        android:translationY="100dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="left"
+        android:text="Sites:"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:translationX="-450dp"
+        android:translationY="50dp"
+        />
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:translationY="150dp"
+        android:translationX="-575dp"
+         />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
